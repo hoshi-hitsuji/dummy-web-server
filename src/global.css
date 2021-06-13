@@ -1,0 +1,49 @@
+html {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+}
+body,
+#__next {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 530px;
+}
+.flex {
+  display: flex;
+  box-sizing: border-box;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.rotation {
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(270deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
